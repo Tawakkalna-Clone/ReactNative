@@ -21,7 +21,6 @@ export default function Services() {
                 <Text style={{ color: "white", textAlign: "left", fontSize: 22 }}>
                     الخدمات العامة</Text>
                 <View style={{ flexWrap: "wrap", flexDirection: "row" }}>
-
                     <View style={{ height: 150, width: 150, backgroundColor: "white" }}>
                     </View>
                 </View>
