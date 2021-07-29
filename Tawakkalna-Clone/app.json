@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Tawakkalna-Clone",
+    "slug": "Tawakkalna-Clone",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Tawakkalna-Clone"
+}
