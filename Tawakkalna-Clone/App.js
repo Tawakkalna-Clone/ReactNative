@@ -3,13 +3,8 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
-  );
-}
+import HomeScreen from './components/HomeScreen';
+
 
 function SettingsScreen() {
   return (
@@ -23,8 +18,9 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
+    
     <NavigationContainer>
-        <Tab.Navigator
+      <Tab.Navigator
           screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
@@ -46,11 +42,11 @@ export default function App() {
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="حسابي" component={SettingsScreen} />
-        <Tab.Screen name="لوحة البيانات" component={SettingsScreen} />
-        <Tab.Screen name="المحفظة الرقمية" component={SettingsScreen} />
-        <Tab.Screen name="الخدمات" component={SettingsScreen} />
         <Tab.Screen name="الرئيسية" component={HomeScreen} />
+        <Tab.Screen name="الخدمات" component={SettingsScreen} />
+        <Tab.Screen name="المحفظة الرقمية" component={SettingsScreen} />
+        <Tab.Screen name="لوحة البيانات" component={SettingsScreen} />
+        <Tab.Screen name="حسابي" component={SettingsScreen} />
 
       </Tab.Navigator>
     </NavigationContainer>
