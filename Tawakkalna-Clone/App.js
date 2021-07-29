@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, I18nManager } from 'react-native';
+import Services from './screens/Services';
 export default function App() {
+  I18nManager.forceRTL(true);
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! layout branch</Text>
+      <Services />
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +15,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#1c1c1c'
   },
 });
