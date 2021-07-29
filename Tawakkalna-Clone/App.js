@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, I18nManager } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import HomeScreen from './components/HomeScreen';
-import MyAccountScreen from './components/MyAccountScreen'
+import HomeScreen from './screens/Home';
+import Services from './screens/Services';
 
 function SettingsScreen() {
   return (
@@ -16,11 +16,13 @@ function SettingsScreen() {
 
 const Tab = createBottomTabNavigator();
 
+
 export default function App() {
+  I18nManager.forceRTL(true);
   return (
     <NavigationContainer>
       <Tab.Navigator
-          screenOptions={({ route }) => ({
+        screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
@@ -42,7 +44,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="الرئيسية" component={HomeScreen} />
-        <Tab.Screen name="الخدمات" component={SettingsScreen} />
+        <Tab.Screen name="الخدمات" component={Services} />
         <Tab.Screen name="المحفظة الرقمية" component={SettingsScreen} />
         <Tab.Screen name="لوحة البيانات" component={SettingsScreen} />
         <Tab.Screen name="حسابي" component={MyAccountScreen} />
@@ -51,3 +53,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+
