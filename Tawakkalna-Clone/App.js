@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HomeScreen from './screens/Home';
 import Services from './screens/Services';
+import MyAccount from './screens/MyAccount';
 
 function SettingsScreen() {
   return (
@@ -47,7 +48,7 @@ export default function App() {
         <Tab.Screen name="الخدمات" component={Services} />
         <Tab.Screen name="المحفظة الرقمية" component={SettingsScreen} />
         <Tab.Screen name="لوحة البيانات" component={SettingsScreen} />
-        <Tab.Screen name="حسابي" component={MyAccountScreen} />
+        <Tab.Screen name="حسابي" component={MyAccount} />
 
       </Tab.Navigator>
     </NavigationContainer>
