@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {  View, I18nManager,StyleSheet ,Image} from 'react-native';
+import { View, I18nManager, StyleSheet, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -15,7 +15,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused}) => {
+          tabBarIcon: ({ focused }) => {
             let iconName;
             if (route.name === "الرئيسية") {
               iconName = focused
@@ -29,7 +29,7 @@ export default function App() {
               iconName = focused
                 ? require("./Assets/icons/active/ServicesActive.png")
                 : require("./Assets/icons/notActive/services.png");
-              
+
             } else if (route.name === "لوحة البيانات") {
               iconName = focused
                 ? require("./Assets/icons/active/dashboard.png")
@@ -39,20 +39,20 @@ export default function App() {
                 ? require("./Assets/icons/active/myAccount.png")
                 : require("./Assets/icons/notActive/myAccount.png");
             }
-            // You can return any component that you like here!
+
             return (
               <View style={styles.container}>
-                <View > 
-                   <Image source={iconName} style={{ width: 25, height: 25 }} />
-                   </View>
-            
+                <View >
+                  <Image source={iconName} style={{ width: 25, height: 25 }} />
+                </View>
+
               </View>
             );
           },
         })}
         tabBarOptions={{
           activeTintColor: "#23AA9C",
-          inactiveTintColor: "gray",
+          inactiveTintColor: "#808080",
         }}
       >
         <Tab.Screen name="الرئيسية" component={HomeScreen} />
@@ -63,7 +63,7 @@ export default function App() {
 
       </Tab.Navigator>
     </NavigationContainer>
-    
+
   );
 }
 const styles = StyleSheet.create({
