@@ -20,7 +20,7 @@ export default function Services() {
                     </View>
 
                     <View style={{ flex: 2, }}>
-                        <Text style={{ color: "white", textAlign: "left", fontSize: 22, marginBottom: 5, marginTop: 25 }}>
+                        <Text style={{ color: "white", textAlign: "left", fontSize: 22, marginBottom: 5, marginTop: 25}}>
                             خدمات التصاريح  </Text>
                         <View style={{ flexWrap: "wrap", flexDirection: "row" }}>
                             <Page3Card name="طلب تصريح جديد" url1={require("../Assets/Request.png")}></Page3Card>
