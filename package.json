@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@react-navigation/native": "^5.9.4"
+    "@react-navigation/native": "^5.9.4",
+    "react-native-relative-units": "^0.0.4"
   }
 }
