@@ -17,7 +17,7 @@ export default function ProfileCard() {
                     </View>
                 </View>
                 <View style={styles.textcont}>
-                    <Text style={styles.tex}>حسن القعده</Text>
+                    <Text style={styles.tex}>فيّ العتيبي</Text>
                 </View>
                 <View style={styles.bottomimages}>
                     <View style={styles.greenthing}/>

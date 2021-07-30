@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, I18nManager } from 'react-native';
+import {  View, I18nManager,StyleSheet ,Image} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -7,9 +7,7 @@ import HomeScreen from './screens/Home';
 import Services from './screens/Services';
 import MyAccount from './screens/MyAccount';
 
-
 const Tab = createBottomTabNavigator();
-
 
 export default function App() {
   I18nManager.forceRTL(true);
@@ -17,24 +15,44 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
+          tabBarIcon: ({ focused}) => {
             let iconName;
-
-            if (route.name === 'Home') {
+            if (route.name === "الرئيسية") {
               iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+                ? require("./Assets/icons/active/home.png")
+                : require("./Assets/icons/notActive/home.png");
+            } else if (route.name === "المحفظة الرقمية") {
+              iconName = focused
+                ? require("./Assets/icons/active/wallet.png")
+                : require("./Assets/icons/notActive/wallet.png");
+            } else if (route.name === "الخدمات") {
+              iconName = focused
+                ? require("./Assets/icons/active/ServicesActive.png")
+                : require("./Assets/icons/notActive/services.png");
+              
+            } else if (route.name === "لوحة البيانات") {
+              iconName = focused
+                ? require("./Assets/icons/active/dashboard.png")
+                : require("./Assets/icons/notActive/dashboard.png");
+            } else if (route.name === "حسابي") {
+              iconName = focused
+                ? require("./Assets/icons/active/myAccount.png")
+                : require("./Assets/icons/notActive/myAccount.png");
             }
-
             // You can return any component that you like here!
-            return /*<Ionicons name={iconName} size={size} color={color} />*/;
+            return (
+              <View style={styles.container}>
+                <View > 
+                   <Image source={iconName} style={{ width: 25, height: 25 }} />
+                   </View>
+            
+              </View>
+            );
           },
         })}
         tabBarOptions={{
-          activeTintColor: 'black',
-          inactiveTintColor: 'gray',
+          activeTintColor: "#23AA9C",
+          inactiveTintColor: "gray",
         }}
       >
         <Tab.Screen name="الرئيسية" component={HomeScreen} />
@@ -45,7 +63,15 @@ export default function App() {
 
       </Tab.Navigator>
     </NavigationContainer>
+    
   );
 }
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+})
 
