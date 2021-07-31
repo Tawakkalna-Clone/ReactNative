@@ -12,7 +12,8 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   I18nManager.forceRTL(true);
   return (
-    <NavigationContainer >
+    <NavigationContainer 
+    theme={{ colors: { background: "#161d25" } }}>
       <Tab.Navigator
       
         screenOptions={({ route  }) => ({
@@ -69,7 +70,7 @@ export default function App() {
         <Tab.Screen name="حسابي" component={MyAccount} />
 
       </Tab.Navigator>
-    </NavigationContainer>
+    </NavigationContainer >
 
   );
 }
