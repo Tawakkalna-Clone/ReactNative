@@ -38,10 +38,12 @@ const styles = StyleSheet.create({
   showAllText:{
   color: 'gray',
    fontSize:15,
-   marginLeft:10
+   marginLeft:10,
+   fontWeight:'bold'
   },
  servicesText:{
   color:'#23AA9C',
-  fontSize:23, 
+  fontSize:19, 
+  fontWeight:'bold'
   }
 });

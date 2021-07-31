@@ -12,7 +12,7 @@ export default function SettingItem(props) {
                 }}>
                     <Ionicons name="chevron-down" size={30} color="white"></Ionicons>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <Text style={{ color: 'white', paddingRight: 10 }}>{props.name}</Text>
+                        <Text style={{ color: 'white', paddingRight: 10  }}>{props.name}</Text>
                         <Image source={props.icon} style={{ width: 30, height: 30, marginHorizontal: 15 }} color="white"></Image>
                     </View>
                 </View>

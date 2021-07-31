@@ -7,7 +7,7 @@ export default function SignOut() {
                 flex: 0.5, justifyContent: "center",
                 alignItems: "center"
             }}>
-                <TouchableOpacity style={styles.button}><Text style={styles.text} onPress={() => navigation.navigate("SignUp")}>تسجيل الخروج</Text></TouchableOpacity>
+                <TouchableOpacity style={styles.button}><Text style={styles.text} >تسجيل الخروج</Text></TouchableOpacity>
             </View>
         </View>
     )

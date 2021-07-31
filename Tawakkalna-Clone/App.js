@@ -12,9 +12,10 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   I18nManager.forceRTL(true);
   return (
-    <NavigationContainer>
+    <NavigationContainer >
       <Tab.Navigator
-        screenOptions={({ route }) => ({
+      
+        screenOptions={({ route  }) => ({
           tabBarIcon: ({ focused }) => {
             let iconName;
             if (route.name === "الرئيسية") {
@@ -53,7 +54,13 @@ export default function App() {
         tabBarOptions={{
           activeTintColor: "#23AA9C",
           inactiveTintColor: "#808080",
+         
+            style: {
+                backgroundColor: '#161d25',
+            },
         }}
+        
+
       >
         <Tab.Screen name="الرئيسية" component={HomeScreen} />
         <Tab.Screen name="الخدمات" component={Services} />
@@ -69,7 +76,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#161d25",
     alignItems: "center",
     justifyContent: "center",
   },

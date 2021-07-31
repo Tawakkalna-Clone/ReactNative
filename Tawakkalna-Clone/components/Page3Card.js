@@ -17,7 +17,7 @@ export default function Page3Card(props) {
                 />
             </View>
             <View style={{ flex: 1, alignItems: 'center' }}>
-                <Text style={{ color: "white", fontSize: 20, textAlign: 'center' }}> {props.name}</Text>
+                <Text style={{ color: "white", fontSize: 16, textAlign: 'center' }}> {props.name}</Text>
             </View>
         </View>
     )
