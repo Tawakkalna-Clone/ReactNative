@@ -51,7 +51,7 @@
 # Demo
 
 <div align="center">
-  <img src="../Assets/Demo iOS.MP4" alt="demo"/>
+  <img src="../Tawakkalna-Clone/Assets/Demo iOS.MP4" alt="demo"/>
   </br>
   </br>
   </div>
