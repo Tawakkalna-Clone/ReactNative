@@ -5,7 +5,7 @@ import StatusCard from '../components/StatusCard';
 import ServiceList from '../components/ServiceList';
 import Tabaud from '../components/Tabaud';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor: "#0f1217"  }}>
 
@@ -18,7 +18,7 @@ export default function HomeScreen() {
                 </View>
                 <ProfileCard/> 
                 <StatusCard/>    
-                <ServiceList/>
+                <ServiceList navigation={navigation}/>
                 <Tabaud/>
 
             </ScrollView>
