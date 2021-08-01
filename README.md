@@ -49,6 +49,7 @@
  ```
 
 # Demo
+ ![TawakkalnaApp](https://github.com/Tawakkalna-Clone/ReactNative/blob/main/Tawakkalna-Clone/Assets/demo.gif)
 <div align="center">
   <img src="" alt="demo"/>
   </br>
