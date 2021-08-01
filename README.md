@@ -51,7 +51,7 @@
 # Demo
 
 <div align="center">
-  <img src="./Tawakkalna-Clone/Assets/Demo iOS.MP4" alt="demo"/>
+  <img src="https://github.com/Tawakkalna-Clone/ReactNative/blob/main/Tawakkalna-Clone/Assets/Demo%20iOS.MP4" alt="demo"/>
   </br>
   </br>
   </div>
