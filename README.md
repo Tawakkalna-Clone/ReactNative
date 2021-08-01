@@ -66,7 +66,7 @@
  - تغريد القحطاني   :  [@Taghreed-Alqahtani](https://github.com/Taghreed-Alqahtani)
  - عبد الرحمن الجعفر  :  [@AbdulrahmanAljafar](https://github.com/AbdulrahmanAljafar)
  - حسن القعدة   :  [@hassanalgadah-tuwaiq](https://github.com/hassanalgadah-tuwaiq)
- - ياسمين الغامدي :  [@Yasmin-AlGhamdi](https://https://github.com/Yasmin-AlGhamd)
+ - ياسمين الغامدي :  [@Yasmin-AlGhamdi](https://github.com/Yasmin-AlGhamdi)
  - سارة الناصر  :  [@Sara-Alnasser](https://github.com/Sara-Alnasser)
  - ندى العتيبي :  [@NadaAlOtaibi](https://github.com/NadaAlOtaibi)
 
