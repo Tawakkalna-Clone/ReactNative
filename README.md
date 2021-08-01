@@ -51,10 +51,19 @@
 # Demo
 
 <div align="center">
- <video  controls>
-  <source src="https://github.com/Tawakkalna-Clone/ReactNative/blob/main/Tawakkalna-Clone/Assets/Demo%20iOS.MP4" type="video/mp4">
-</video>
+ 
   </div>
+ 
+
+ [العرض]( https://www.canva.com/design/DAEl48oZYtQ/i9v-ReLYzklEm5EYJ9IiZA/view?utm_content=DAEl48oZYtQ&utm_campaign=designshare&utm_medium=link2&utm_source=homepage_design_menu
+)
+
+ 
+ 
+
+ 
+  [ التوثيق](https://www.canva.com/design/DAElkQBA8Ks/U1XHUnR1x7A8wKgT2bNhhw/view?utm_content=DAElkQBA8Ks&utm_campaign=designshare&utm_medium=link2&utm_source=homepage_design_menu )
+
   
 ## اعضاء الفريق   
 
