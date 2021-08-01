@@ -1,15 +1,23 @@
 import React from 'react'
-import { View, Text , StyleSheet,Image ,ScrollView} from 'react-native'
+import { View, Text , StyleSheet,Image ,ScrollView,TouchableOpacity,Button} from 'react-native'
 import ServiceCard from './ServiceCard.js'
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Services from '../screens/Services';
 
-export default function ServiceList() {
+const  Stack = createStackNavigator();
+
+export default function ServiceList({ navigation }) {
+
       return (
       <View style={styles.container}>
       <View style={styles.textServiceBox}>
         <View style={{ flexDirection:'row'}}>
         <Image source={{ uri:'https://h.top4top.io/p_2036dy4sf1.png'}}
         style={{height:20,width: 15}}/>
+        <TouchableOpacity onPress={() => navigation.navigate('الخدمات')}>
          <Text style={styles.showAllText}>عرض الكل</Text>
+         </TouchableOpacity>
        </View>
          <Text style={styles.servicesText}>الخدمات الحديثة</Text>
       </View>

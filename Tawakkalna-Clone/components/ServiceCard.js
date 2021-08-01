@@ -1,7 +1,8 @@
 import React from 'react'
-import { View, Text ,StyleSheet,Image} from 'react-native'
+import { View, Text ,StyleSheet,Image,TouchableOpacity} from 'react-native'
 export default function SeviceCard(props) {
     return (
+      <TouchableOpacity >
         <View style={{ flex: 1,width:100 , marginHorizontal:5 }}>
         <View style={styles. boxStyle}>
           <View style={{alignItems: "center"}}>
@@ -15,6 +16,7 @@ export default function SeviceCard(props) {
           </View>
         </View>
       </View>
+      </TouchableOpacity>
     )
 }
 const styles = StyleSheet.create({

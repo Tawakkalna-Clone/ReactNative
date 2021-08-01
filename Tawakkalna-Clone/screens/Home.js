@@ -4,7 +4,7 @@ import ProfileCard from '../components/ProfileCard';
 import StatusCard from '../components/StatusCard';
 import ServiceList from '../components/ServiceList';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor: "#0f1217"  }}>
             <View style={{ flex: 0.3, alignSelf: "flex-end", marginTop: 30, marginRight: 20 }}>
@@ -14,7 +14,7 @@ export default function HomeScreen() {
             </View>
             <ProfileCard/> 
             <StatusCard/>    
-            <ServiceList/>
+            <ServiceList navigation={navigation}/>
    
         </View>
     );
