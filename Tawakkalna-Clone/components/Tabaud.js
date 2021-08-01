@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
    background:{
         marginTop: 25,
-        marginBottom: 25,
+        marginBottom: 35,
         backgroundColor: '#70cacb',
         width: 360,
         height: 90 ,
