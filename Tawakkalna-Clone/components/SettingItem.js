@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image ,TouchableOpacity} from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
 export default function SettingItem(props) {
     return (
+        <TouchableOpacity >
         <View style={{ flex: 1 }}>
             <View style={{ flex: 1 }}>
                 <View style={{
@@ -18,5 +19,6 @@ export default function SettingItem(props) {
                 </View>
             </View>
         </View>
+        </TouchableOpacity>
     )
 }
