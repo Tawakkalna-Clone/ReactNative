@@ -21,13 +21,13 @@ export default function ServiceList() {
          <ServiceCard img='https://e.top4top.io/p_203643tkt1.png' name='لقاح كورونا'/>
          <ServiceCard img='https://h.top4top.io/p_2036dg76y1.png' name='الجواز الصحي'/>
         <ServiceCard img='https://c.top4top.io/p_2036qf3iv1.png' name=' التبرع بالاعضاء'/>
-    
      </ScrollView>
       </View>
     )
 }
 const styles = StyleSheet.create({
   container: {
+    marginTop:20,
     flex: 1
   },
   textServiceBox:{

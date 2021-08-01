@@ -4,9 +4,22 @@ import {LinearGradient} from 'expo-linear-gradient';
 
 let {bp, vw, vh} = require('react-native-relative-units')(375);
 
+var months = ["يناير", "فبراير", "مارس", "إبريل", "مايو", "يونيو",
+              "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+
+var days =["اﻷحد","اﻷثنين","الثلاثاء","اﻷربعاء","الخميس","الجمعة","السبت"];
+
+var date = new Date();
+
+console.log("The current month is " + months[date.getMonth()]);
+console.log("The current day is " + days[date.getDay()]);
+
+var newdate =days[date.getDay()]+' '+ date.getDate()+ ' ' +  months[date.getMonth()]  +', ' + date.toLocaleTimeString() ;
+// var newdate =date.toLocaleDateString()+ date.toLocaleTimeString();
+
 export default function StatusCard() {
     return (
-        <View>
+        <View style={{ flexDirection:'row',justifyContent:'center'}}>
             <LinearGradient style={styles.Profilestatus} colors={['#004319', '#006128', '#036d2f']}>
                 <View>
                     <Image style={styles.qrcode} source={require('../Assets/qrcode.png')}/>
@@ -14,7 +27,7 @@ export default function StatusCard() {
                 <View>
                     <Text style={styles.statusTextt}>{`محصن`}</Text>
                     <Text style={styles.statusTextt}>{`أكمل جرعات لقاح كورونا (كوفيد-19)`}</Text>
-                    <Text style={styles.statusTextt}>{`آخر تحديث: الأربعاء 28 يوليو, 10:35 ص`}</Text>
+                    <Text style={styles.statusTextt}>{` آخر تحديث: ` + newdate}</Text>
                 </View>
                 <View><Image style={styles.refreshicon} source={require('../Assets/refresh-2-xxl.png')}/></View>
 
@@ -32,7 +45,7 @@ const styles = StyleSheet.create({
         height: 20 * vh,
         backgroundColor: 'green',
         borderRadius: 15,
-        marginTop: 20,
+        marginTop: 30,
     },
     refreshicon: {
         resizeMode: 'contain',
@@ -44,6 +57,7 @@ const styles = StyleSheet.create({
 
     },
     statusTextt: {
+        fontSize:12,
         color: 'white',
         fontWeight: 'bold',
         marginBottom: 10

@@ -6,7 +6,7 @@ let {bp, vw, vh} = require('react-native-relative-units')(375);
 
 export default function ProfileCard() {
     return (
-        <View >
+        <View style={{ flexDirection:'row',justifyContent:'center'}}>
             <ImageBackground source={require('../Assets/Background.jpeg')} imageStyle={{borderRadius: 15}}
                              resizeMode="cover" style={styles.cont}>
                 <View style={styles.profileimgcont}>
@@ -82,9 +82,9 @@ const styles = StyleSheet.create({
     greenthing: {
         backgroundColor: '#005d26',
         width: 22 * vw,
-        height: 3 * vh,
-        borderTopRightRadius: 35,
-        borderBottomRightRadius: 35
+        height: 4 * vh,
+        borderTopRightRadius: 10,
+        borderBottomRightRadius: 10
     },
     profileImage: {
         resizeMode: 'contain',
