@@ -51,9 +51,9 @@
 # Demo
 
 <div align="center">
-  <video src="https://github.com/Tawakkalna-Clone/ReactNative/blob/main/Tawakkalna-Clone/Assets/Demo%20iOS.MP4" alt="demo"/>
-  </br>
-  </br>
+ <video  controls>
+  <source src="https://github.com/Tawakkalna-Clone/ReactNative/blob/main/Tawakkalna-Clone/Assets/Demo%20iOS.MP4" type="video/mp4">
+</video>
   </div>
   
 ## اعضاء الفريق   
